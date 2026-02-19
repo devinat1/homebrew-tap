@@ -5,22 +5,22 @@
 class Humancode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/devinat1/humancode"
-  version "0.0.3"
+  version "0.0.4"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.3/humancode-darwin-x64.zip"
-      sha256 "0b24d8fe634f7497a8cdc83abfd4bc1d6c1658cae5c00dab7cb765e8596af5f9"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.4/humancode-darwin-x64.zip"
+      sha256 "5b3af3995f98b05ddbbbb5f1facf568a778ac9185b70526171007a761b3bb1d7"
 
       def install
         bin.install "humancode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.3/humancode-darwin-arm64.zip"
-      sha256 "227f0efd9dbee23dc964d8a6aa3414786c2760a976917c0988a3dbf7f0661367"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.4/humancode-darwin-arm64.zip"
+      sha256 "deb89da99e7390ba17a5071d83ca0f2ffaeb8fafa53ed2edbe019f122fef404c"
 
       def install
         bin.install "humancode"
@@ -30,15 +30,15 @@ class Humancode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.3/humancode-linux-x64.tar.gz"
-      sha256 "c27ddc3a898c56289a68827c54d1e685d10fe4ee1ad1c0a065f905a1e2d5bd80"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.4/humancode-linux-x64.tar.gz"
+      sha256 "76c7647a6a5257f5b08c5196c56377f05c822eb6f97f53c66ab929e3cbd89c11"
       def install
         bin.install "humancode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.3/humancode-linux-arm64.tar.gz"
-      sha256 "af1a9b75a90b5ef063fd6c741a50130b8a147dfc5cf261453ec8af67842d0855"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.4/humancode-linux-arm64.tar.gz"
+      sha256 "57b53c6ff5a19e8c3459c5d5a60583713387ee2ee961e4e73063614632f41ec5"
       def install
         bin.install "humancode"
       end
