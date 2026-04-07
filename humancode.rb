@@ -5,22 +5,22 @@
 class Humancode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/devinat1/humancode"
-  version "0.0.30"
+  version "0.0.31"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.30/humancode-darwin-x64.zip"
-      sha256 "1be853f37a0bfe21ada9f58cc2f0e94f0872c42b86f2c9fcdcfb4fee052899ea"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.31/humancode-darwin-x64.zip"
+      sha256 "4437c03c5ea316af23d2c7758e0456e5efc51401d172a8b9a8e33ac7f5cb81d9"
 
       def install
         bin.install "humancode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.30/humancode-darwin-arm64.zip"
-      sha256 "16474d166a880f5e1b93eb7c6c73e648f49f217cefaa3981bb7b3538ef4df9e0"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.31/humancode-darwin-arm64.zip"
+      sha256 "1c5e262dd3e6a06f4b8ee255f2acb923e08063da0d5d8fb80bedc79bc15785e0"
 
       def install
         bin.install "humancode"
@@ -30,15 +30,15 @@ class Humancode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.30/humancode-linux-x64.tar.gz"
-      sha256 "9b9936681ee2fcd4a22a67cfb3dc0ed3907205390b8456f02e1cd65347c1b4a6"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.31/humancode-linux-x64.tar.gz"
+      sha256 "faab74e1b510b966f02061f73073460144bbd460e36d006fc2a9289802ee648b"
       def install
         bin.install "humancode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/devinat1/humancode/releases/download/v0.0.30/humancode-linux-arm64.tar.gz"
-      sha256 "5faedec1ad76070482af6e0fa0d61a36064aa51fe95febd7b73de034d180d137"
+      url "https://github.com/devinat1/humancode/releases/download/v0.0.31/humancode-linux-arm64.tar.gz"
+      sha256 "76b5163359c7bea694b2d7a72ef45ba69eb8e394f704047c30c3ada575aefc71"
       def install
         bin.install "humancode"
       end
